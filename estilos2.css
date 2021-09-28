@@ -1,0 +1,74 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+	font-family: "helvetica";
+}
+
+#btn{
+	position: absolute;
+	transition: 150ms;
+	border: 3px solid rgba(100, 100, 100, 0.1);
+	width: 18vw;
+	height: 5vw;
+	font-family: 'poppins', sans-serif;
+	font-size: 120%;
+	border-radius: 8px;
+	cursor: pointer;
+	opacity: 0;
+	color: #fff;
+	background-size: 300%;
+	background-image: linear-gradient(to left, #00B7DA, #161569, #00B7DA);
+	left: 41vw;
+	top: 15vh;
+}
+#btn:hover{
+	font-size: 140%;
+}
+
+#sobres{
+	position: absolute;
+	margin-top: 27vh;
+	left: 32.5vw;
+	width: 35vw;
+	height: 25vw;
+	opacity: 0;
+	z-index: 1;
+}
+#sobre{
+	position: absolute;
+	margin-top: 28vh;
+	left: 35vw;
+	width: 30vw;
+	height: 20vw;
+	opacity: 0;
+	z-index: 0;
+}
+
+p.centro{
+	text-align: center;
+}
+
+@keyframes zoom{
+	from{
+		width: 0vw;
+		opacity: 1;
+		height: 0vw;
+	}
+	to{
+		opacity: 1;
+		width: 35vw;
+		height: 25vw;
+	}
+}
+@keyframes rotacion{
+	from{
+		transform: rotateY(0deg);
+	}to{
+		transform: rotateY(1440deg);
+	}
+}
